@@ -5,6 +5,8 @@ function App() {
   const [Todos, setTodos] = useState(["musa", "emin"])
   const [inputValue, setInputValue] = useState('')
 
+
+
   return (
     <div className='w-full min-h-screen flex items-center justify-center flex-col'>
       <h1 className='flex'>Todos</h1>
@@ -26,7 +28,7 @@ function App() {
         <button onClick={() => {
           setTodos([...Todos, inputValue])
           setInputValue('')
-        }} className='bg-green-500 border-solid'>Add</button>
+        }} className='bg-green-500 border-solid hover:bg-green-300 transition'>Add</button>
       </div>
     </div>
   )
