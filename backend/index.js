@@ -2,8 +2,11 @@ import 'dotenv/config'
 import express from "express"
 import connectMongoDb from "./mongoose.js"
 import todoModel from './models/todo.js'
+import cors from "cors"
 
 const app = express()
+
+app.use(cors())
 
 app.use(express.json())
 connectMongoDb()
